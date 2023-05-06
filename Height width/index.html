@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and width</title>
+    <style>
+        div{
+            height: 200px;
+            background-color:aqua;
+            /* width: 50%; */
+            max-width: 500px;
+            padding: 25px;
+            margin: 40px 50px;
+            box-sizing: border-box;
+        }
+
+         .box{
+            width: 350px;
+            border: 2px solid red;
+            background-color: yellow;
+        }
+
+        .content{
+            width: 320px;
+            padding: 10px;
+            border: 5px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Set the height and width of an element
+    </h2>
+
+    <div>
+        This div element has a height of 200px and a width of 50%
+    </div>
+
+    <h1>Max-Width property</h1>
+    <div>
+        This div element has a height of 100px and a max-width of 500px.
+    </div>
+
+    <h1>Width and height of an element</h1>
+    <p>Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.</p>
+
+    <h1>Calculate the total width:</h1>
+    <div class="box"></div>
+    <div class="content">
+        <p>The picture above is 350px wide. The total width of this element is also 350px</p>
+    </div>
+
+    <p>
+        320px (width)
++ 20px (left + right padding)
++ 10px (left + right border)
++ 0px (left + right margin)
+= 350px
+    </p>
+</body>
+</html>

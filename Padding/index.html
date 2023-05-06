@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        p{
+            border: 2px solid red;
+            padding: 80px;
+            padding: 30px 40px 50px 60px;
+            padding: 50px 80px;
+        }
+
+        div.ex1{
+            width: 300px;
+           
+            background-color: yellow;
+        }
+
+        div.ex2{
+            width: 300px;
+            padding: 25px;
+            background-color: aqua;
+        }
+
+        div.exA{
+            width: 300px;
+            background-color: red;
+        }
+        div.exB{
+            width: 300px;
+            padding: 25px;
+            box-sizing: border-box;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Concepts similar to Margin
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad blanditiis itaque deleniti!</p>
+        </div>
+    </h1>
+
+    <h1>Padding and element width</h1>
+    <div class="ex1">
+        this div is of width 300px
+    </div>
+    <div class="ex2">
+        this div is of width 350 px. But defined as 300 px.
+    </div>
+
+    <h1>Box-Sizing Property</h1>
+    <p>To keep the same width we use the box-sizing property 
+        which keeps the same level of width no matter how much you increase the 
+        padding.
+    </p>
+    <div class="exA">This div is 300px wide.</div>
+    <br>
+    <div class="exB">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.
+</div>
+</body>
+</html>

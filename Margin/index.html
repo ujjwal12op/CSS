@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS margins</title>
+    <style>
+        div{
+            
+            /* margin: auto; */
+            border: 1px solid red;
+            margin-left: 200px;
+        }
+
+        p{
+            margin:25px 70px 80px 100px;
+            border: 1px solid red;
+        }
+
+        p.ex1{
+            margin-left: inherit;
+        }
+
+        h1{
+            margin: 0 0 20px 0;
+        }
+        h2{
+            margin: 50px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Margins are used to create space around elements, outside of any defined borders. -->
+    <h1>CSS margins</h1>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore atque fuga totam mollitia officiis quam. Molestias asperiores in quidem blanditiis magnam delectus iste esse nemo veritatis, numquam autem laudantium eos.</div>
+    <h1>Properties of Margins</h1>
+    <p>margin-top
+        margin-right
+        margin-bottom
+        margin-left</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        
+    <h1>Margin Shorthand Properties</h1>
+    <p>margin: 25px 50px 75px 100px;
+        top margin is 25px
+        right margin is 50px
+        bottom margin is 75px
+        left margin is 100px
+        
+        in short form : TRBF
+    </p>
+
+    <h1>Inherit Property</h1>
+    <h2>Use of the inherit Property</h2>
+    <p id="inherit">Left margin inherited from the parent element</p>
+    <div>
+        <p class="ex1">this paragraph has an inherited left margin from div element</p>
+    </div>
+
+    <h1>Margin Collapse</h1>
+
+    <p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. So, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+</body>
+</html>
